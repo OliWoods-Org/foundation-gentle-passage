@@ -6,12 +6,23 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL-3.0-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/cost-Free_Forever-green" alt="Free">
-  <img src="https://img.shields.io/badge/status-Active-brightgreen" alt="Active">
+  <img src="https://img.shields.io/badge/status-Prototype-yellow" alt="Prototype">
   <a href="https://mama.oliwoods.ai"><img src="https://img.shields.io/badge/Built_with-MAMA-8b5cf6" alt="Built with MAMA"></a>
   <a href="https://mama.oliwoods.ai/foundation"><img src="https://img.shields.io/badge/OliWoods-Foundation-10b981" alt="OliWoods Foundation"></a>
 </p>
 
 ---
+
+---
+
+## Status / Honesty
+
+This repository is a **prototype library** under the Mama Foundation (Scheme C). It is **not** production clinical software, **not** HIPAA certified, and **not** cleared for care delivery.
+
+- Maturity: **Prototype**
+- Portal path: [https://mama.oliwoods.ai/foundation/gentle-passage](https://mama.oliwoods.ai/foundation/gentle-passage)
+- See [MAMA-MSTR#959](https://github.com/OliWoods-Org/MAMA-MSTR/issues/959)
+
 
 > *"More than 50% of Americans who qualify for hospice never receive it. Most die in hospitals — surrounded by machines — when they wanted to be at home. The paperwork was never filed. No one explained the options. The system failed them in their final hours."*
 > — NHPCO Facts and Figures, 2023
@@ -41,7 +52,7 @@ flowchart TD
     E --> I[Insurance Navigator\nBenefit explanation +\nreferral letter generation]
     F --> J[Appointment Assist\nBooking + reminders +\nquestion prep for doctor]
     G --> K[Grief Resources\nPost-loss support network\ncommunity + counseling]
-    H & I & J & K --> L[(Supabase\nHIPAA-ready encrypted store)]
+    H & I & J & K --> L[(Supabase\nencrypted store (prototype; not HIPAA certified))]
 ```
 
 ## Features
@@ -53,7 +64,7 @@ flowchart TD
 | **Provider Finder** | Geo-located hospice + palliative care teams with ratings, specialties, and availability | NHPCO registry |
 | **DNR / DNI Guidance** | Plain-language explanation of resuscitation decisions with family discussion frameworks | AHA protocols |
 | **Caregiver Prep Guide** | Practical and emotional preparation checklist for family caregivers in final weeks | Hospice Foundation curriculum |
-| **Document Vault** | Encrypted, shareable storage of completed directives for medical teams and family | HIPAA-ready |
+| **Document Vault** | Encrypted, shareable storage of completed directives for medical teams and family | privacy-oriented (not HIPAA certified; prototype) |
 | **Insurance Navigator** | Medicare Part A hospice benefit decoder + private insurance benefit summary | CMS 2024 |
 | **Grief Resource Bridge** | Immediate post-loss support network connections, counseling finder, peer groups | APA grief frameworks |
 
@@ -79,7 +90,7 @@ npm run dev
 
 - **Runtime:** Node.js + TypeScript
 - **Validation:** Zod schemas
-- **Database:** Supabase (PostgreSQL, HIPAA-ready configuration)
+- **Database:** Supabase (PostgreSQL, privacy-oriented (not HIPAA certified; prototype) configuration)
 - **AI:** Claude API (compassionate conversation design, plain-language generation)
 - **Documents:** PDF generation (state-specific advance directives)
 - **Alerts:** Twilio (SMS/WhatsApp), Resend (email)
